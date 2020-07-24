@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- === GOOGLE FONTS === -->
+    <!-- === Google Fonts ===-->
     <!-- Roboto -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- FONT AWESOME -->
+    <!-- === Font Awesome === -->
     <script
       src="https://kit.fontawesome.com/5b6edc865f.js"
       crossorigin="anonymous"
     ></script>
-    <!-- === STYLES === -->
+    <!-- === Local Stylesheet === -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Deep Truths | Quiz</title>
+    <title>You revealed | A Quiz</title>
   </head>
   <body>
     <!-- 'pageWrapper' contains the entire site's content and prevents it from bleeding to the edge of the screen and from getting too large-->
@@ -25,7 +25,7 @@
       <header>
         <h1>Who Are you?</h1>
         <p>
-          Who are you, deep down? Answer these questions to reveal the truth about your
+          What type of person are you, deep down? Answer these questions to reveal the truth about your
           personality.
         </p>
       </header>
@@ -33,14 +33,14 @@
       <main>
         <!-- 'quizWrapper' wraps the 'questions' section and serves as decorative element-->
         <div class="quizWrapper">
-          <!-- 'quizQuestions' will contain ALL of the dynamically displayed quiz questions -->
+          <!-- 'quizQuestions' contains ALL of the dynamically displayed quiz questions -->
           <form action="" method="/" class="quizContainer">
             <!-- === QUESTION ONE === -->
             <fieldset class="question one">
               <legend>Pick Your Potion</legend>
               <div class="quizOptionsWrapper">
-                <!-- --- Option A --- -->
-                <div class="quizOption a">
+                <!-- ----- Option A ----- -->
+                <div class="quizOption">
                   <div class="imgWrapper">
                     <img src="./assets/chemex.png" alt="Bold illustration of a Chemex pour over">
                   </div>
@@ -49,8 +49,8 @@
                     <input type="radio" name="coffee" id="coffee">
                   </label>
                 </div>
-                <!-- --- Option B --- -->
-                <div class="quizOption a">
+                <!-- ----- Option B ----- -->
+                <div class="quizOption">
                   <div class="imgWrapper">
                     <img src="./assets/hops.png" alt="Hand drawn illustration of hops">
                   </div>
@@ -59,14 +59,42 @@
                     <input type="radio" name="hops" id="hops">
                   </label>
                 </div>
+                <!-- ----- Option C ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/waterCircle.png" alt="Three white water droplets in a black circle">
+                  </div>
+                  <label for="water">
+                    Water
+                    <input type="radio" name="water" id="water">
+                  </label>
+                </div>
+                <!-- ----- Option D ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/wine.png" alt="Hand drawn illustration of hops">
+                  </div>
+                  <label for="wine">
+                    Wine
+                    <input type="radio" name="wine" id="wine">
+                  </label>
+                </div>
+                <div class="buttons">
+                  <button aria-label="back">
+                    <i class="fas fa-arrow-left"></i>
+                    Back
+                  </button>
+                  <button aria-label="forward">
+                    Next
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
               </fieldset>
             </div>
           </form>
         </div>
       </main>
     </div>
-
-
 
       <main>
               <div class="answer">
@@ -88,16 +116,7 @@
                 </div>
               </div>
             </div>
-            <div class="buttons">
-              <button aria-label="back">
-                <i class="fas fa-arrow-left"></i>
-                Back
-              </button>
-              <button aria-label="forward">
-                Next
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
+            
           </section>
         </div>
 
