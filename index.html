@@ -36,7 +36,7 @@
           <!-- 'quizQuestions' contains ALL of the dynamically displayed quiz questions -->
           <form action="" method="/" class="quizContainer">
             <!-- === QUESTION ONE === -->
-            <fieldset class="question one">
+            <fieldset class="question hide">
               <legend>Pick Your Potion</legend>
               <div class="quizOptionsWrapper">
                 <!-- ----- Option A ----- -->
@@ -90,90 +90,67 @@
                   </button>
                 </div>
               </fieldset>
+
+            <!-- === QUESTION TWO === -->
+            <fieldset class="question one">
+              <legend>Are you more of a ...</legend>
+              <div class="quizOptionsWrapper">
+                <!-- ----- Option A ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/lion.png" alt="Black and white illustration of a proud cartoon lion">
+                  </div>
+                  <label for="hero">
+                    Hero
+                    <input type="radio" name="hero" id="hero">
+                  </label>
+                </div>
+                <!-- ----- Option B ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/plant2.png" alt="Hand drawn illustration of healer">
+                  </div>
+                  <label for="healer">
+                    Healer
+                    <input type="radio" name="healer" id="healer">
+                  </label>
+                </div>
+                <!-- ----- Option C ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/bookshelf.png" alt="Tall and modern illustration of a bookshelf">
+                  </div>
+                  <label for="thinker">
+                    Thinker
+                    <input type="radio" name="thinker" id="thinker">
+                  </label>
+                </div>
+                <!-- ----- Option D ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/mouth.png" alt="Hand drawn illustration of hops">
+                  </div>
+                  <label for="Hedonist">
+                    Hedonist
+                    <input type="radio" name="Hedonist" id="Hedonist">
+                  </label>
+                </div>
+                <div class="buttons">
+                  <button aria-label="back">
+                    <i class="fas fa-arrow-left"></i>
+                    Back
+                  </button>
+                  <button aria-label="forward">
+                    Next
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </fieldset>
             </div>
           </form>
         </div>
       </main>
     </div>
-
-      <main>
-              <div class="answer">
-                <div class="img-wrapper">
-                  <img
-                    src="./waterCircle.png"
-                    alt="Water by Alexchan from the Noun Project"
-                  />
-                  <p>Water</p>
-                </div>
-              </div>
-              <div class="answer">
-                <div class="img-wrapper">
-                  <img
-                    src="./wine.png"
-                    alt="Wine by sasha willins from the Noun Project"
-                  />
-                  <p>Wine</p>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-        </div>
-
-        <!-- QUESTION NO 2 -->
-        <div class="contentContainer hide">
-          <section class="question">
-            <h2>Are you more of a ...</h2>
-            <div class="answerWrapper">
-              <div class="answer">
-                <div class="img-wrapper">
-                  <img
-                    src="./lion.png"
-                    alt="Coffee Pot illustration by William Woods from the Noun Project"
-                  />
-                  <p>Hero</p>
-                </div>
-              </div>
-              <div class="answer">
-                <div class="img-wrapper">
-                  <img
-                    src="./plant2.png"
-                    alt="help by P Thanga Vignesh from the Noun Project"
-                  />
-                  <p>Healer</p>
-                </div>
-              </div>
-              <div class="answer">
-                <div class="img-wrapper">
-                  <img
-                    src="./bookshelf.png"
-                    alt="Water by Alexchan from the Noun Project"
-                  />
-                  <p>Statigizer</p>
-                </div>
-              </div>
-              <div class="answer">
-                <div class="img-wrapper">
-                  <img
-                    src="./mouth.png"
-                    alt="Wine by sasha willins from the Noun Project"
-                  />
-                  <p>Hedonist</p>
-                </div>
-              </div>
-            </div>
-            <div class="buttons">
-              <button aria-label="back">
-                <i class="fas fa-arrow-left"></i>
-                Back
-              </button>
-              <button aria-label="forward">
-                Next
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </section>
-        </div>
 
           <!-- QUESTION NO 3 -->
           <div class="contentContainer hide">

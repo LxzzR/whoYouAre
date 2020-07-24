@@ -75,6 +75,10 @@ fieldset {
   border: none;
 }
 
+.hide {
+  display: none;
+}
+
 h1,
 h2,
 legend {
@@ -94,7 +98,8 @@ legend {
 }
 
 legend,
-label {
+label,
+button {
   color: #343434;
   text-align: center;
 }
@@ -154,22 +159,16 @@ header p {
 }
 
 .quizOption {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 5px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  border-radius: 10px;
   margin: 1% 0;
-  padding: 30px 0;
+  padding: 20px 0 50px 0;
+  position: relative;
   -webkit-transition: 700ms background, 350ms -webkit-box-shadow;
   transition: 700ms background, 350ms -webkit-box-shadow;
   transition: 700ms background, 350ms box-shadow;
@@ -178,18 +177,36 @@ header p {
 }
 
 .quizOption:hover {
-  cursor: pointer;
   background: rgba(218, 214, 213, 0.7);
   -webkit-box-shadow: 0 2px 3px rgba(128, 128, 128, 0.4);
           box-shadow: 0 2px 3px rgba(128, 128, 128, 0.4);
 }
 
-.imgWrapper {
-  width: 42%;
+label {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  left: 0;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
-label {
-  width: 100%;
+label:hover {
+  cursor: pointer;
+}
+
+.imgWrapper {
+  margin: auto;
+  width: 40%;
 }
 
 .buttons {
@@ -206,7 +223,6 @@ label {
 button {
   border: none;
   background: transparent;
-  color: #232323;
   font-size: 2.5rem;
   font-weight: 700;
   padding: 25px 0 10px 0;
@@ -218,8 +234,8 @@ button {
 }
 
 button:hover {
-  color: black;
+  color: #121212;
   cursor: pointer;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
