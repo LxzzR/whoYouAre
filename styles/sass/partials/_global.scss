@@ -1,0 +1,59 @@
+// === GLOBAL STYLES ===
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $black;
+  color: $white;
+  font-family: $mainFont;
+  font-size: 2rem;
+  font-weight: 500;
+  height: 100vh;
+  position: relative;
+}
+
+body::after {
+  background: url(../assets/succulent.jpg) no-repeat;
+  background-size: cover;
+  content: "";
+  left: 0;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.pageWrapper {
+  // align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  width: 27%;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  width: 65%;
+}

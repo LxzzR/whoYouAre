@@ -1,1 +1,158 @@
-/* No CSS */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #121212;
+  color: #f2efee;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  height: 100vh;
+  position: relative;
+}
+
+body::after {
+  background: url(../assets/succulent.jpg) no-repeat;
+  background-size: cover;
+  content: "";
+  left: 0;
+  opacity: 0.15;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.pageWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  width: 27%;
+}
+
+main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 65%;
+}
+
+h1 {
+  font-size: 9rem;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+header p {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.quizWrapper {
+  background: rgba(245, 245, 245, 0.1);
+  border-radius: 15px;
+  padding: 2%;
+  margin: 0 auto;
+}
+
+.quizContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f2efee;
+  color: #333;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 20px 20px 15px 20px;
+}
+
+.quizOptionsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  width: 99%;
+}
+
+.quizOption {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 1% 0;
+  padding: 30px 0;
+  -webkit-transition: 700ms background, 350ms -webkit-box-shadow;
+  transition: 700ms background, 350ms -webkit-box-shadow;
+  transition: 700ms background, 350ms box-shadow;
+  transition: 700ms background, 350ms box-shadow, 350ms -webkit-box-shadow;
+  width: 49%;
+}
+
+.imgWrapper,
+label {
+  width: 60%;
+}

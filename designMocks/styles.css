@@ -1,28 +1,26 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
-html {
+/* html {
   font-size: 62.5%;
-}
+} */
 
-body {
-  /* background: hsl(0, 0%, 86%);
-  color: #121212; */
+/* body {
   background: #121212;
-  color: rgb(242, 239, 238);
+  color: #f2efee;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 500;
   height: 100vh;
   position: relative;
-}
+} */
 
 /* <span>Photo by <a href="https://unsplash.com/@nypl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">The New York Public Library</a> on <a href="https://unsplash.com/s/photos/simple-floral-illustration-background?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
 /* <span>Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/dark-floral-illustration-background?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */
-body::after {
+/* body::after {
   background: url(./succulent.jpg) no-repeat;
   background-size: cover;
   content: "";
@@ -33,9 +31,9 @@ body::after {
   height: 100%;
   width: 100%;
   z-index: -1;
-}
+} */
 
-h1 {
+/* h1 {
   font-size: 9rem;
 }
 
@@ -48,25 +46,9 @@ h2 {
 
 p {
   line-height: 1.5;
-}
+} */
 
-header {
-  width: 27%;
-}
-
-main {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  width: 65%;
-}
-
-header p {
-  font-size: 2.5rem;
-  font-weight: 300;
-}
-
-.content-wrapper {
+/* .contentContainer {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -76,13 +58,23 @@ header p {
   max-width: 1200px;
 }
 
-.contentContainer {
-  /* background: rgba(238, 233, 229, 0.57); */
+.quizContainer {
   background: rgba(245, 245, 245, 0.1);
   border-radius: 15px;
   padding: 2%;
   margin: 0 auto;
+} */
+
+/* header {
+  width: 27%;
 }
+
+main {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  width: 65%;
+} */
 
 .question {
   align-items: center;

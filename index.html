@@ -15,8 +15,258 @@
       crossorigin="anonymous"
     ></script>
     <!-- === STYLES === -->
-    <link rel="stylesheet" href="./styles.css" />
-    <title>What you are?</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Deep Truths | Quiz</title>
   </head>
-  <body></body>
+  <body>
+    <!-- 'pageWrapper' contains the entire site's content and prevents it from bleeding to the edge of the screen and from getting too large-->
+    <div class="pageWrapper">
+
+      <header>
+        <h1>Who Are you?</h1>
+        <p>
+          Who are you, deep down? Answer these questions to reveal the truth about your
+          personality.
+        </p>
+      </header>
+
+      <main>
+        <!-- 'quizWrapper' wraps the 'questions' section and serves as decorative element-->
+        <div class="quizWrapper">
+          <!-- 'quizQuestions' will contain ALL of the dynamically displayed quiz questions -->
+          <form action="" method="/" class="quizContainer">
+            <!-- === QUESTION ONE === -->
+            <fieldset class="question one">
+              <legend>Pick Your Potion</legend>
+              <div class="quizOptionsWrapper">
+                <!-- --- Option A --- -->
+                <div class="quizOption a">
+                  <div class="imgWrapper">
+                    <img src="./assets/chemex.png" alt="Bold illustration of a Chemex pour over">
+                  </div>
+                  <label for="coffee">
+                    Coffee
+                    <input type="radio" name="coffee" id="coffee">
+                  </label>
+                </div>
+                <!-- --- Option B --- -->
+                <div class="quizOption a">
+                  <div class="imgWrapper">
+                    <img src="./assets/hops.png" alt="Hand drawn illustration of hops">
+                  </div>
+                  <label for="hops">
+                    Hops
+                    <input type="radio" name="hops" id="hops">
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+
+
+
+      <main>
+              <div class="answer">
+                <div class="img-wrapper">
+                  <img
+                    src="./waterCircle.png"
+                    alt="Water by Alexchan from the Noun Project"
+                  />
+                  <p>Water</p>
+                </div>
+              </div>
+              <div class="answer">
+                <div class="img-wrapper">
+                  <img
+                    src="./wine.png"
+                    alt="Wine by sasha willins from the Noun Project"
+                  />
+                  <p>Wine</p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button aria-label="back">
+                <i class="fas fa-arrow-left"></i>
+                Back
+              </button>
+              <button aria-label="forward">
+                Next
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <!-- QUESTION NO 2 -->
+        <div class="contentContainer hide">
+          <section class="question">
+            <h2>Are you more of a ...</h2>
+            <div class="answerWrapper">
+              <div class="answer">
+                <div class="img-wrapper">
+                  <img
+                    src="./lion.png"
+                    alt="Coffee Pot illustration by William Woods from the Noun Project"
+                  />
+                  <p>Hero</p>
+                </div>
+              </div>
+              <div class="answer">
+                <div class="img-wrapper">
+                  <img
+                    src="./plant2.png"
+                    alt="help by P Thanga Vignesh from the Noun Project"
+                  />
+                  <p>Healer</p>
+                </div>
+              </div>
+              <div class="answer">
+                <div class="img-wrapper">
+                  <img
+                    src="./bookshelf.png"
+                    alt="Water by Alexchan from the Noun Project"
+                  />
+                  <p>Statigizer</p>
+                </div>
+              </div>
+              <div class="answer">
+                <div class="img-wrapper">
+                  <img
+                    src="./mouth.png"
+                    alt="Wine by sasha willins from the Noun Project"
+                  />
+                  <p>Hedonist</p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button aria-label="back">
+                <i class="fas fa-arrow-left"></i>
+                Back
+              </button>
+              <button aria-label="forward">
+                Next
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </section>
+        </div>
+
+          <!-- QUESTION NO 3 -->
+          <div class="contentContainer hide">
+            <section class="question">
+              <h2>What gives you powers?</h2>
+              <div class="answerWrapper">
+                <div class="answer">
+                  <div class="img-wrapper">
+                    <img
+                      src="./ideas.png"
+                      alt="Coffee Pot illustration by William Woods from the Noun Project"
+                    />
+                    <p>Ideas</p>
+                  </div>
+                </div>
+                <div class="answer">
+                  <div class="img-wrapper">
+                    <img
+                      src="./headphones.png"
+                      alt="help by P Thanga Vignesh from the Noun Project"
+                    />
+                    <p>Arts</p>
+                  </div>
+                </div>
+                <div class="answer">
+                  <div class="img-wrapper">
+                    <img
+                      src="./yoga.png"
+                      alt=""
+                    />
+                    <p>Care</p>
+                  </div>
+                </div>
+                <div class="answer">
+                  <div class="img-wrapper">
+                    <img
+                      src="./nature.png"
+                      alt="Wine by sasha willins from the Noun Project"
+                    />
+                    <p>Travel</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <button aria-label="back">
+                  <i class="fas fa-arrow-left"></i>
+                  Back
+                </button>
+                <button aria-label="forward">
+                  Next
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </section>
+          </div>
+
+          <!-- QUESTION NUMBER 4 -->
+          <div class="contentContainer">
+            <section class="question">
+              <h2>Choose a weapon</h2>
+              <div class="answerWrapper">
+                <div class="answer">
+                  <div class="img-wrapper">
+                    <img
+                      src="./pen.png"
+                      alt="Coffee Pot illustration by William Woods from the Noun Project"
+                    />
+                    <p>Pen</p>
+                  </div>
+                </div>
+                <div class="answer">
+                  <div class="img-wrapper">
+                    <img
+                      src="./loveHands.png"
+                      alt="help by P Thanga Vignesh from the Noun Project"
+                    />
+                    <p>Love</p>
+                  </div>
+                </div>
+                <div class="answer">
+                  <div class="img-wrapper">
+                    <img
+                      src="./sword.png"
+                      alt=""
+                    />
+                    <p>Sword</p>
+                  </div>
+                </div>
+                <div class="answer">
+                  <div class="img-wrapper">
+                    <img
+                      src="./charm.png"
+                      alt="Wine by sasha willins from the Noun Project"
+                    />
+                    <p>Charm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <button aria-label="back">
+                  <i class="fas fa-arrow-left"></i>
+                  Back
+                </button>
+                <button aria-label="forward">
+                  Next
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
