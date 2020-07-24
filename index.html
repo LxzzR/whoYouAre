@@ -46,7 +46,7 @@
                   </div>
                   <label for="coffee">
                     Coffee
-                    <input type="radio" name="coffee" id="coffee">
+                    <input type="radio" name="questionOne" id="coffee" value="coffee">
                   </label>
                 </div>
                 <!-- ----- Option B ----- -->
@@ -56,7 +56,7 @@
                   </div>
                   <label for="hops">
                     Hops
-                    <input type="radio" name="hops" id="hops">
+                    <input type="radio" name="questionOne" id="hops" value="hops">
                   </label>
                 </div>
                 <!-- ----- Option C ----- -->
@@ -66,7 +66,7 @@
                   </div>
                   <label for="water">
                     Water
-                    <input type="radio" name="water" id="water">
+                    <input type="radio" name="questionOne" id="water" value="water">
                   </label>
                 </div>
                 <!-- ----- Option D ----- -->
@@ -76,11 +76,11 @@
                   </div>
                   <label for="wine">
                     Wine
-                    <input type="radio" name="wine" id="wine">
+                    <input type="radio" name="questionOne" id="wine" value="wine">
                   </label>
                 </div>
                 <div class="buttons">
-                  <button aria-label="back">
+                  <button aria-label="back hide">
                     <i class="fas fa-arrow-left"></i>
                     Back
                   </button>
@@ -92,7 +92,7 @@
               </fieldset>
 
             <!-- === QUESTION TWO === -->
-            <fieldset class="question one">
+            <fieldset class="question hide">
               <legend>Are you more of a ...</legend>
               <div class="quizOptionsWrapper">
                 <!-- ----- Option A ----- -->
@@ -102,17 +102,17 @@
                   </div>
                   <label for="hero">
                     Hero
-                    <input type="radio" name="hero" id="hero">
+                    <input type="radio" name="questionTwo" id="hero" value="value">
                   </label>
                 </div>
                 <!-- ----- Option B ----- -->
                 <div class="quizOption">
                   <div class="imgWrapper">
-                    <img src="./assets/plant2.png" alt="Hand drawn illustration of healer">
+                    <img src="./assets/plant.png" alt="Hand drawn illustration of healer">
                   </div>
                   <label for="healer">
                     Healer
-                    <input type="radio" name="healer" id="healer">
+                    <input type="radio" name="questionTwo" id="healer" value="healer">
                   </label>
                 </div>
                 <!-- ----- Option C ----- -->
@@ -122,7 +122,7 @@
                   </div>
                   <label for="thinker">
                     Thinker
-                    <input type="radio" name="thinker" id="thinker">
+                    <input type="radio" name="questionTwo" id="thinker" value="thinker">
                   </label>
                 </div>
                 <!-- ----- Option D ----- -->
@@ -132,7 +132,7 @@
                   </div>
                   <label for="Hedonist">
                     Hedonist
-                    <input type="radio" name="Hedonist" id="Hedonist">
+                    <input type="radio" name="questionTwo" id="hedonist" value="hedonist">
                   </label>
                 </div>
                 <div class="buttons">
@@ -146,44 +146,68 @@
                   </button>
                 </div>
               </fieldset>
+
+              <!-- === Question Three === -->
+              <fieldset class="question one">
+                <legend>What gives you powers?</legend>
+                <div class="quizOptionsWrapper">
+                  <!-- ----- Option A ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/ideas.png" alt="Symetrical and gemetric shapes">
+                    </div>
+                    <label for="ideas">
+                      Ideas
+                      <input type="radio" name="questionThree" id="ideas" value="ideas">
+                    </label>
+                  </div>
+                  <!-- ----- Option B ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/headphones.png" alt="Illustration of over-ear headphones">
+                    </div>
+                    <label for="arts">
+                      Arts
+                      <input type="radio" name="questionThree" id="arts" value="arts">
+                    </label>
+                  </div>
+                  <!-- ----- Option C ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/nature.png" alt="">
+                    </div>
+                    <label for="adventure">
+                      Adventure
+                      <input type="radio" name="questionThree" id="adventure" value="adventure">
+                    </label>
+                  </div>
+                  <!-- ----- Option D ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/yoga.png" alt="Illustration of a person in a yoga pose">
+                    </div>
+                    <label for="care">
+                      Care
+                      <input type="radio" name="questionThree" id="care" value="care">
+                    </label>
+                  </div>
+                  <div class="buttons">
+                    <button aria-label="back">
+                      <i class="fas fa-arrow-left"></i>
+                      Back
+                    </button>
+                    <button aria-label="forward">
+                      Next
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </fieldset>
             </div>
           </form>
         </div>
       </main>
     </div>
 
-          <!-- QUESTION NO 3 -->
-          <div class="contentContainer hide">
-            <section class="question">
-              <h2>What gives you powers?</h2>
-              <div class="answerWrapper">
-                <div class="answer">
-                  <div class="img-wrapper">
-                    <img
-                      src="./ideas.png"
-                      alt="Coffee Pot illustration by William Woods from the Noun Project"
-                    />
-                    <p>Ideas</p>
-                  </div>
-                </div>
-                <div class="answer">
-                  <div class="img-wrapper">
-                    <img
-                      src="./headphones.png"
-                      alt="help by P Thanga Vignesh from the Noun Project"
-                    />
-                    <p>Arts</p>
-                  </div>
-                </div>
-                <div class="answer">
-                  <div class="img-wrapper">
-                    <img
-                      src="./yoga.png"
-                      alt=""
-                    />
-                    <p>Care</p>
-                  </div>
-                </div>
                 <div class="answer">
                   <div class="img-wrapper">
                     <img

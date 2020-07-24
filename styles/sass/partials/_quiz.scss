@@ -32,7 +32,8 @@
   position: relative;
   transition: 700ms background, 350ms box-shadow;
   width: 49%;
-  &:hover {
+  &:hover,
+  &:focus-within {
     background: rgba(218, 214, 213, 0.7);
     box-shadow: 0 2px 3px rgba(128, 128, 128, 0.4);
   }
