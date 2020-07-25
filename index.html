@@ -35,6 +35,7 @@
         <div class="quizWrapper">
           <!-- 'quizQuestions' contains ALL of the dynamically displayed quiz questions -->
           <form action="" method="/" class="quizContainer" autocomplete="off">
+            
             <!-- === QUESTION ONE === -->
             <fieldset class="question hide">
               <legend>Pick Your Potion</legend>
@@ -149,7 +150,7 @@
 
               <!-- === Question Three === -->
               <fieldset class="question hide">
-                <legend>What gives you powers?</legend>
+                <legend>Your superpower?</legend>
                 <div class="quizOptionsWrapper">
                   <!-- ----- Option A ----- -->
                   <div class="quizOption">
@@ -203,10 +204,9 @@
                   </div>
                 </fieldset>
 
-
               <!-- === Question Four === -->
-              <fieldset class="question">
-                <legend>What gives you powers?</legend>
+              <fieldset class="question hide">
+                <legend>What's your weapon?</legend>
                 <div class="quizOptionsWrapper">
                   <!-- ----- Option A ----- -->
                   <div class="quizOption">
@@ -214,7 +214,7 @@
                       <img src="./assets/pen.png" alt="Symetrical and gemetric shapes">
                     </div>
                     <label for="pen">
-                      Pen
+                      Wit
                       <input type="radio" name="questionFour" id="pen" value="pen">
                     </label>
                   </div>
@@ -224,7 +224,7 @@
                       <img src="./assets/loveHands.png" alt="Illustration of over-ear headphones">
                     </div>
                     <label for="love">
-                      Love
+                      Empathy
                       <input type="radio" name="questionFour" id="love" value="love">
                     </label>
                   </div>
@@ -234,7 +234,7 @@
                       <img src="./assets/sword.png" alt="">
                     </div>
                     <label for="sword">
-                      Sword
+                      Strength
                       <input type="radio" name="questionFour" id="sword" value="sword">
                     </label>
                   </div>
@@ -246,6 +246,63 @@
                     <label for="charm">
                       Charm
                       <input type="radio" name="questionFour" id="charm" value="charm">
+                    </label>
+                  </div>
+                  <div class="buttons">
+                    <button aria-label="back">
+                      <i class="fas fa-arrow-left"></i>
+                      Back
+                    </button>
+                    <button aria-label="forward">
+                      Next
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </fieldset>
+
+
+              <!-- === Question Five === -->
+              <fieldset class="question">
+                <legend>Finally, refuel ...</legend>
+                <div class="quizOptionsWrapper">
+                  <!-- ----- Option A ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/veggies.png" alt="">
+                    </div>
+                    <label for="veggies">
+                      Farm Veggies
+                      <input type="radio" name="questionFive" id="veggies" value="veggies">
+                    </label>
+                  </div>
+                  <!-- ----- Option B ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/coffee.png" alt="">
+                    </div>
+                    <label for="coffee">
+                      More Coffee
+                      <input type="radio" name="questionFive" id="coffee" value="coffee">
+                    </label>
+                  </div>
+                  <!-- ----- Option C ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/fastFood.png" alt="">
+                    </div>
+                    <label for="fastFood">
+                      Fast Food
+                      <input type="radio" name="questionFive" id="fastFood" value="fastFood">
+                    </label>
+                  </div>
+                  <!-- ----- Option D ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/shake.png" alt="">
+                    </div>
+                    <label for="shake">
+                      Power Shake
+                      <input type="radio" name="questionFive" id="shake" value="shake">
                     </label>
                   </div>
                   <div class="buttons">
