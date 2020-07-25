@@ -34,7 +34,7 @@
         <!-- 'quizWrapper' wraps the 'questions' section and serves as decorative element-->
         <div class="quizWrapper">
           <!-- 'quizQuestions' contains ALL of the dynamically displayed quiz questions -->
-          <form action="" method="/" class="quizContainer">
+          <form action="" method="/" class="quizContainer" autocomplete="off">
             <!-- === QUESTION ONE === -->
             <fieldset class="question hide">
               <legend>Pick Your Potion</legend>
@@ -148,7 +148,7 @@
               </fieldset>
 
               <!-- === Question Three === -->
-              <fieldset class="question one">
+              <fieldset class="question hide">
                 <legend>What gives you powers?</legend>
                 <div class="quizOptionsWrapper">
                   <!-- ----- Option A ----- -->
@@ -202,91 +202,68 @@
                     </button>
                   </div>
                 </fieldset>
+
+
+              <!-- === Question Four === -->
+              <fieldset class="question">
+                <legend>What gives you powers?</legend>
+                <div class="quizOptionsWrapper">
+                  <!-- ----- Option A ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/pen.png" alt="Symetrical and gemetric shapes">
+                    </div>
+                    <label for="pen">
+                      Pen
+                      <input type="radio" name="questionFour" id="pen" value="pen">
+                    </label>
+                  </div>
+                  <!-- ----- Option B ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/loveHands.png" alt="Illustration of over-ear headphones">
+                    </div>
+                    <label for="love">
+                      Love
+                      <input type="radio" name="questionFour" id="love" value="love">
+                    </label>
+                  </div>
+                  <!-- ----- Option C ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/sword.png" alt="">
+                    </div>
+                    <label for="sword">
+                      Sword
+                      <input type="radio" name="questionFour" id="sword" value="sword">
+                    </label>
+                  </div>
+                  <!-- ----- Option D ----- -->
+                  <div class="quizOption">
+                    <div class="imgWrapper">
+                      <img src="./assets/charm.png" alt="Illustration of a person in a yoga pose">
+                    </div>
+                    <label for="charm">
+                      Charm
+                      <input type="radio" name="questionFour" id="charm" value="charm">
+                    </label>
+                  </div>
+                  <div class="buttons">
+                    <button aria-label="back">
+                      <i class="fas fa-arrow-left"></i>
+                      Back
+                    </button>
+                    <button aria-label="forward">
+                      Next
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </fieldset>
             </div>
           </form>
         </div>
       </main>
     </div>
-
-                <div class="answer">
-                  <div class="img-wrapper">
-                    <img
-                      src="./nature.png"
-                      alt="Wine by sasha willins from the Noun Project"
-                    />
-                    <p>Travel</p>
-                  </div>
-                </div>
-              </div>
-              <div class="buttons">
-                <button aria-label="back">
-                  <i class="fas fa-arrow-left"></i>
-                  Back
-                </button>
-                <button aria-label="forward">
-                  Next
-                  <i class="fas fa-arrow-right"></i>
-                </button>
-              </div>
-            </section>
-          </div>
-
-          <!-- QUESTION NUMBER 4 -->
-          <div class="contentContainer">
-            <section class="question">
-              <h2>Choose a weapon</h2>
-              <div class="answerWrapper">
-                <div class="answer">
-                  <div class="img-wrapper">
-                    <img
-                      src="./pen.png"
-                      alt="Coffee Pot illustration by William Woods from the Noun Project"
-                    />
-                    <p>Pen</p>
-                  </div>
-                </div>
-                <div class="answer">
-                  <div class="img-wrapper">
-                    <img
-                      src="./loveHands.png"
-                      alt="help by P Thanga Vignesh from the Noun Project"
-                    />
-                    <p>Love</p>
-                  </div>
-                </div>
-                <div class="answer">
-                  <div class="img-wrapper">
-                    <img
-                      src="./sword.png"
-                      alt=""
-                    />
-                    <p>Sword</p>
-                  </div>
-                </div>
-                <div class="answer">
-                  <div class="img-wrapper">
-                    <img
-                      src="./charm.png"
-                      alt="Wine by sasha willins from the Noun Project"
-                    />
-                    <p>Charm</p>
-                  </div>
-                </div>
-              </div>
-              <div class="buttons">
-                <button aria-label="back">
-                  <i class="fas fa-arrow-left"></i>
-                  Back
-                </button>
-                <button aria-label="forward">
-                  Next
-                  <i class="fas fa-arrow-right"></i>
-                </button>
-              </div>
-            </section>
-          </div>
-        </div>
-      </main>
     </div>
   </body>
 </html>

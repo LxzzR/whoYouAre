@@ -11,27 +11,34 @@ h1 {
   font-size: 9rem;
 }
 
+p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+legend,
+label,
+button {
+  text-align: center;
+}
+legend,
+label {
+  color: $black;
+}
+
 legend {
   font-size: 4.5rem;
   font-weight: 900;
   padding: 10px 0;
 }
 
-legend,
-label,
 button {
   color: $primary;
-  text-align: center;
 }
 
 label {
   font-size: 3rem;
   font-weight: 300;
-}
-
-p {
-  font-size: 2rem;
-  line-height: 1.5;
 }
 
 header p {
