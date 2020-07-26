@@ -206,11 +206,21 @@ app.handleSubmit = () => {
   });
 };
 
+// // === RESET QUIZ ===
+
+// // Handles quiz reset button ----- +
+app.handleReset = () => {
+  $(".reset").click(function () {
+    location.reload();
+  });
+};
+
 // === INITALIZES APPLICATION ===
 app.init = () => {
   app.handleRadioSelection();
   app.handleSubmit();
   app.handleNavigation();
+  app.handleReset();
 };
 
 // === DOCUMENT READY ===

@@ -277,7 +277,7 @@ button:hover, button:focus-within {
 
 @media all and (min-width: 375px) {
   html {
-    font-size: 40%;
+    font-size: 42%;
   }
   body {
     display: -webkit-box;
@@ -297,7 +297,7 @@ button:hover, button:focus-within {
 
 @media all and (min-width: 768px) {
   html {
-    font-size: 55%;
+    font-size: 58%;
   }
   body::after {
     height: 100%;
@@ -332,6 +332,7 @@ button:hover, button:focus-within {
     width: 68%;
   }
   .quizContainer {
+    height: 100%;
     padding: 25px 15px;
   }
   .resultsContainer {

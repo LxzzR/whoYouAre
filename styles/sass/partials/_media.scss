@@ -3,7 +3,7 @@
 // Small Screens ----- +
 @media all and (min-width: 375px) {
   html {
-    font-size: 40%;
+    font-size: 42%;
   }
 
   body {
@@ -22,7 +22,7 @@
 // Medium sized screens ------ +
 @media all and (min-width: 768px) {
   html {
-    font-size: 55%;
+    font-size: 58%;
   }
 
   body {
@@ -65,6 +65,7 @@
   }
 
   .quizContainer {
+    height: 100%;
     padding: 25px 15px;
   }
 
