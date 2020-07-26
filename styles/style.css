@@ -75,8 +75,20 @@ fieldset {
   border: none;
 }
 
+input {
+  opacity: 0;
+}
+
 .hide {
-  display: none;
+  position: absolute;
+  overflow: hidden;
+  left: 1000px;
+  height: 1px;
+  width: 1px;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 h1,
@@ -91,17 +103,22 @@ h1 {
   font-size: 9rem;
 }
 
-legend {
-  font-size: 4.5rem;
-  font-weight: 900;
-  padding: 10px 0;
+p {
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 legend,
 label,
 button {
-  color: #033123;
+  color: #121212;
   text-align: center;
+}
+
+legend {
+  font-size: 4.5rem;
+  font-weight: 900;
+  padding: 10px 0;
 }
 
 label {
@@ -109,24 +126,21 @@ label {
   font-weight: 300;
 }
 
-p {
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
 header p {
   font-size: 2.5rem;
   font-weight: 300;
 }
 
-.quizWrapper {
+.quizWrapper,
+.resultsWrapper {
   background: rgba(245, 245, 245, 0.1);
   border-radius: 15px;
   padding: 2%;
   margin: 0 auto;
 }
 
-.quizContainer {
+.quizContainer,
+.resultsContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -140,7 +154,11 @@ header p {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding: 20px 20px 15px 20px;
+  padding: 25px 15px;
+}
+
+.resultsContainer {
+  padding: 250px 50px;
 }
 
 .quizOptionsWrapper {
@@ -206,7 +224,7 @@ label:hover {
 
 .imgWrapper {
   margin: auto;
-  width: 40%;
+  width: 42%;
 }
 
 .buttons {
@@ -222,7 +240,6 @@ label:hover {
 
 button {
   border: none;
-  color: #033123;
   background: transparent;
   font-size: 2.5rem;
   font-weight: 700;

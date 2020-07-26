@@ -62,10 +62,20 @@ fieldset {
   border: none;
 }
 
-// input {
-//   opacity: 0;
-// }
+// Visually hides radio buttons while ensuring they're accessible
+input {
+  opacity: 0;
+}
 
+// Hides elements while ensuring they remain part of the document flow for screen readers
 .hide {
-  display: none;
+  position: absolute;
+  overflow: hidden;
+  left: 1000px;
+  height: 1px;
+  width: 1px;
+}
+
+.hidden {
+  visibility: hidden;
 }

@@ -1,18 +1,24 @@
-.quizWrapper {
+.quizWrapper,
+.resultsWrapper {
   background: rgba(245, 245, 245, 0.1);
   border-radius: 15px;
   padding: 2%;
   margin: 0 auto;
 }
 
-.quizContainer {
+.quizContainer,
+.resultsContainer {
   align-items: center;
   background: rgb(242, 239, 238);
   color: #333;
   border-radius: 10px;
   display: flex;
   flex-flow: column nowrap;
-  padding: 20px 20px 15px 20px;
+  padding: 25px 15px;
+}
+
+.resultsContainer {
+  padding: 250px 50px;
 }
 
 .quizOptionsWrapper {
@@ -56,5 +62,5 @@ label {
 
 .imgWrapper {
   margin: auto;
-  width: 40%;
+  width: 42%;
 }

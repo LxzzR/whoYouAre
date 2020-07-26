@@ -19,21 +19,14 @@ p {
 legend,
 label,
 button {
-  text-align: center;
-}
-legend,
-label {
   color: $black;
+  text-align: center;
 }
 
 legend {
   font-size: 4.5rem;
   font-weight: 900;
   padding: 10px 0;
-}
-
-button {
-  color: $primary;
 }
 
 label {
