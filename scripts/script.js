@@ -19,8 +19,8 @@ app.results = [
   { id: "d", name: "leader", count: 0, result: "You got heoric" },
   {
     id: "e",
-    name: "mixedResults",
-    result: "You're a combination and can't be given a label",
+    name: "rebelious",
+    result: "You're a rebel and can't be given a label",
   },
 ];
 
@@ -51,7 +51,7 @@ app.navigateQuestions = function (button) {
   app.checkNavButton($buttonType, $nextQuestion, $previousQuestion);
 };
 
-// If button is "next" displays next page, if button is "previous" displays previous page ----- +
+// Displays next or previous page, depending on button type ----- +
 app.checkNavButton = (buttonType, next, previous) => {
   if (buttonType === "next") {
     $(next).removeClass("hide");
@@ -73,11 +73,15 @@ app.handleNavigation = function () {
 // Handles radio selection events ----- +
 app.handleRadioSelection = function () {
   $("input[type=radio").click(function () {
-    const $questionIndex = $(this)
-      .parents("fieldset")
-      .attr("data-questionIndex");
+    // -- Scoped Variables --
+    const $fieldset = $(this).parents("fieldset");
+    const questionIndex = $fieldset.attr("data-questionIndex");
     const $value = $(this).attr("value");
-    app.saveUserSelection($questionIndex, $value);
+    // -- Function Calls --
+    app.saveUserSelection(questionIndex, $value);
+    // Adds styling to user-selected option
+    $fieldset.find("div").removeClass("selected");
+    $(this).parents("div").addClass("selected");
   });
 };
 
@@ -92,7 +96,7 @@ app.findResults = function () {
   console.log(app.results);
 };
 
-// Loops through the answers array ----- +
+// Loops through the answers array and counts results  ----- +
 app.loopAnswers = (array) => {
   array.forEach(function (answer) {
     const userResult = answer;
@@ -155,11 +159,10 @@ app.findFinalResult = (a, b, c, d, e) => {
   app.displayResults(finalResult);
 };
 
-// Appends quiz results to the page ----- +
+// Appends final quiz result to the page ----- +
 app.displayResults = (finalResult) => {
   app.elementVisbility(".quizWrapper", ".resultsWrapper");
   app.elementVisbility(".quizContainer", ".resultsContainer");
-  // Appends final Result to the dom
   $(".result").text(finalResult);
 };
 
