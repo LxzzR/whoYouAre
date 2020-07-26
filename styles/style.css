@@ -5,10 +5,6 @@
   padding: 0;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   background: #121212;
   color: #f2efee;
@@ -17,6 +13,7 @@ body {
   font-weight: 500;
   height: 100vh;
   position: relative;
+  width: 100vw;
 }
 
 body::after {
@@ -27,7 +24,7 @@ body::after {
   opacity: 0.15;
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 110%;
   width: 100%;
   z-index: -1;
 }
@@ -44,17 +41,21 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
-  width: 90%;
   margin: 0 auto;
-  max-width: 1200px;
+  width: 90%;
 }
 
 header {
-  width: 27%;
+  margin: 0 auto;
+  padding: 15px;
 }
 
 main {
@@ -64,11 +65,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 65%;
+  margin: 0 auto;
 }
 
 fieldset {
@@ -81,21 +78,34 @@ input {
 
 .hide {
   position: absolute;
-  overflow: hidden;
-  left: 1000px;
+  overflow-x: hidden;
+  opacity: 0;
+  left: -1000px;
   height: 1px;
   width: 1px;
+  -webkit-transition: opacity 700ms;
+  transition: opacity 700ms;
+}
+
+.show {
+  opacity: 1;
+  -webkit-transition: opacity 700ms;
+  transition: opacity 700ms;
 }
 
 .hidden {
   visibility: hidden;
 }
 
+html {
+  font-size: 32.5%;
+}
+
 h1,
 h2,
 legend {
   font-weight: 700;
-  margin: 15px 0;
+  padding: 15px 0;
   text-transform: uppercase;
 }
 
@@ -104,6 +114,7 @@ h1 {
 }
 
 p {
+  font-weight: 300;
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -133,7 +144,7 @@ header p {
 
 .quizWrapper,
 .resultsWrapper {
-  background: rgba(245, 245, 245, 0.1);
+  background: rgba(245, 245, 245, 0.15);
   border-radius: 15px;
   padding: 2%;
   margin: 0 auto;
@@ -145,7 +156,7 @@ header p {
       -ms-flex-align: center;
           align-items: center;
   background: #f2efee;
-  color: #333;
+  color: #121212;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,11 +165,17 @@ header p {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding: 25px 15px;
+  padding: 10px;
 }
 
 .resultsContainer {
-  padding: 250px 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(18, 18, 18, 0.85);
+  color: #f2efee;
+  padding: 100px 20px;
+  width: 100%;
 }
 
 .quizOptionsWrapper {
@@ -173,7 +190,8 @@ header p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-transform: uppercase;
-  width: 99%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .quizOption {
@@ -185,7 +203,7 @@ header p {
   display: flex;
   border-radius: 10px;
   margin: 1% 0;
-  padding: 20px 0 50px 0;
+  padding: 10px 0 50px 0;
   position: relative;
   -webkit-transition: 700ms background, 350ms -webkit-box-shadow;
   transition: 700ms background, 350ms -webkit-box-shadow;
@@ -223,7 +241,7 @@ label:hover {
 }
 
 .imgWrapper {
-  margin: auto;
+  margin: 0 auto;
   width: 42%;
 }
 
@@ -255,4 +273,68 @@ button:hover, button:focus-within {
   cursor: pointer;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+@media all and (min-width: 375px) {
+  html {
+    font-size: 40%;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body::after {
+    height: 110%;
+  }
+  .pageWrapper {
+    height: 90%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  body::after {
+    height: 100%;
+  }
+  .resultsContainer {
+    padding: 250px 50px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  html {
+    font-size: 62.5%;
+  }
+  .pageWrapper {
+    height: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .pageWrapper {
+    max-width: 1200px;
+    width: 90%;
+  }
+  header {
+    width: 27%;
+  }
+  main {
+    width: 68%;
+  }
+  .quizContainer {
+    padding: 25px 15px;
+  }
+  .resultsContainer {
+    padding: 250px 100px;
+  }
 }

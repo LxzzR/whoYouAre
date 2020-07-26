@@ -14,20 +14,24 @@
       src="https://kit.fontawesome.com/5b6edc865f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- === Favicon === -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
     <!-- === Local Stylesheet === -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>You revealed | A Quiz</title>
+    <title>Who Are You, Really?</title>
   </head>
   <body>
     <!-- 'pageWrapper' contains the entire site's content and prevents it from bleeding to the edge of the screen and from getting too large-->
     <div class="pageWrapper">
-
       <header>
-        <h1>Who Are you?</h1>
-        <p>
-          What type of person are you, deep down? Answer these questions to reveal the truth about your
-          personality.
-        </p>
+          <h1>Who Are you?</h1>
+          <p>
+            What type of person are you, deep down? Answer these questions to reveal the truth about your
+            personality.
+          </p>
       </header>
 
       <main>
@@ -38,7 +42,7 @@
             
             <!-- === QUESTION ONE === -->
             <fieldset class="question questionOne" data-questionIndex="0">
-              <legend>Pick Your Potion</legend>
+              <legend>Pick Your Poison</legend>
               <div class="quizOptionsWrapper">
                 <!-- ----- Option A ----- -->
                 <div class="quizOption">
@@ -94,7 +98,7 @@
 
             <!-- === QUESTION TWO === -->
             <fieldset class="question questionTwo hide" data-questionIndex="1">
-              <legend>Are you more of a ...</legend>
+              <legend>What's your MO?</legend>
               <div class="quizOptionsWrapper">
                 <!-- ----- Option ----- -->
                 <div class="quizOption">
@@ -150,7 +154,7 @@
 
               <!-- === Question Three === -->
               <fieldset class="question questionThree hide" data-questionIndex="2">
-                <legend>Your superpower?</legend>
+                <legend>What makes you powerful?</legend>
                 <div class="quizOptionsWrapper">
                   <!-- ----- Option ----- -->
                   <div class="quizOption">
@@ -271,7 +275,7 @@
                       <img src="./assets/veggies.png" alt="">
                     </div>
                     <label for="veggies">
-                      Farm Veggies
+                      Veggies
                       <input type="radio" name="questionFive" id="veggies" value="compassionate">
                     </label>
                   </div>
@@ -281,7 +285,7 @@
                       <img src="./assets/coffee.png" alt="">
                     </div>
                     <label for="coffee2">
-                      More Coffee
+                      Coffee
                       <input type="radio" name="questionFive" id="coffee2" value="thoughtful">
                     </label>
                   </div>
@@ -301,7 +305,7 @@
                       <img src="./assets/shake.png" alt="">
                     </div>
                     <label for="shake">
-                      Power Shake
+                      Shake
                       <input type="radio" name="questionFive" id="shake" value="leader">
                     </label>
                   </div>
@@ -326,7 +330,8 @@
         </div>
       </main>
     </div>
-    </div>
+  </body>
+
 
     <script
   src="https://code.jquery.com/jquery-3.5.1.js"

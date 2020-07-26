@@ -5,10 +5,6 @@
   padding: 0;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   background: $black;
   color: $white;
@@ -17,19 +13,19 @@ body {
   font-weight: 500;
   height: 100vh;
   position: relative;
-}
-
-body::after {
-  background: url(../assets/succulent.jpg) no-repeat;
-  background-size: cover;
-  content: "";
-  left: 0;
-  opacity: 0.15;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
+  width: 100vw;
+  &::after {
+    background: url(../assets/succulent.jpg) no-repeat;
+    background-size: cover;
+    content: "";
+    left: 0;
+    opacity: 0.15;
+    position: absolute;
+    top: 0;
+    height: 110%;
+    width: 100%;
+    z-index: -1;
+  }
 }
 
 img {
@@ -40,22 +36,22 @@ img {
 .pageWrapper {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
   height: 100%;
-  width: 90%;
+  justify-content: space-between;
   margin: 0 auto;
-  max-width: 1200px;
+  width: 90%;
 }
 
 header {
-  width: 27%;
+  margin: 0 auto;
+  padding: 15px;
 }
 
 main {
   align-items: center;
   display: flex;
-  flex-flow: row wrap;
-  width: 65%;
+  margin: 0 auto;
 }
 
 fieldset {
@@ -70,10 +66,17 @@ input {
 // Hides elements while ensuring they remain part of the document flow for screen readers
 .hide {
   position: absolute;
-  overflow: hidden;
-  left: 1000px;
+  overflow-x: hidden;
+  opacity: 0;
+  left: -1000px;
   height: 1px;
   width: 1px;
+  transition: opacity 700ms;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 700ms;
 }
 
 .hidden {

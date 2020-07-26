@@ -1,9 +1,14 @@
 // === TYPOGRAPHY ===
+html {
+  // font-size: 40%;
+  font-size: 32.5%;
+}
+
 h1,
 h2,
 legend {
   font-weight: 700;
-  margin: 15px 0;
+  padding: 15px 0;
   text-transform: uppercase;
 }
 
@@ -12,6 +17,7 @@ h1 {
 }
 
 p {
+  font-weight: 300;
   font-size: 2rem;
   line-height: 1.5;
 }

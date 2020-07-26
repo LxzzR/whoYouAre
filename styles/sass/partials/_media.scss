@@ -1,0 +1,74 @@
+// === MEDIA QUERIES ===
+
+// Small Screens ----- +
+@media all and (min-width: 375px) {
+  html {
+    font-size: 40%;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    &::after {
+      height: 110%;
+    }
+  }
+
+  .pageWrapper {
+    height: 90%;
+  }
+}
+
+// Medium sized screens ------ +
+@media all and (min-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    &::after {
+      height: 100%;
+    }
+  }
+
+  .resultsContainer {
+    padding: 250px 50px;
+  }
+}
+
+// Med-Large screens ----- +
+@media all and (min-width: 900px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .pageWrapper {
+    height: 80%;
+    justify-content: space-between;
+    width: 80%;
+  }
+}
+
+// Large Screens ----- +
+@media all and (min-width: 1100px) {
+  .pageWrapper {
+    max-width: 1200px;
+    width: 90%;
+  }
+
+  header {
+    width: 27%;
+  }
+
+  main {
+    width: 68%;
+  }
+
+  .quizContainer {
+    padding: 25px 15px;
+  }
+
+  .resultsContainer {
+    padding: 250px 100px;
+  }
+}

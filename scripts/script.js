@@ -8,19 +8,39 @@ app.answers = ["", "", "", "", ""];
 
 // Results array contains all possible quiz result objects----- +
 app.results = [
-  { id: "a", name: "thoughtful", count: 0, result: "You got Thoughtful" },
-  { id: "b", name: "sensual", count: 0, result: "You got sensual!" },
+  {
+    id: "a",
+    name: "thoughtful",
+    count: 0,
+    result:
+      "You're a thoughtful and creative person who is most comfortable in the realm of ideas.",
+  },
+  {
+    id: "b",
+    name: "sensual",
+    count: 0,
+    result:
+      "You're a sensual person who enjoys life's pleasures. You make the most of your time, and you remind those around you to live in the moment.",
+  },
   {
     id: "c",
     name: "compassionate",
     count: 0,
-    result: "You got compassionate!",
+    result:
+      "You're a considerate person who likes to cultivate growth and improvement in yourself and those around you. You are comfortable with big feelings and have a calming energy that puts those around you at ease.",
   },
-  { id: "d", name: "leader", count: 0, result: "You got heoric" },
+  {
+    id: "d",
+    name: "heroic",
+    count: 0,
+    result:
+      "You make the best of situations and exude a deep sense of determination that others admire. Your adventurous spirit and strong will are a force to be reckoned with.",
+  },
   {
     id: "e",
     name: "rebelious",
-    result: "You're a rebel and can't be given a label",
+    result:
+      "You're a rebel and can't be given a label. You like to defy expecations and can't be easily stereotyped.",
   },
 ];
 
@@ -29,7 +49,9 @@ app.results = [
 //Hides and shows elements on the page while ensuring they remain in the document flow ----- +
 app.elementVisbility = (hide, show) => {
   $(hide).addClass("hide");
+  $(hide).removeClass("show");
   $(show).removeClass("hide");
+  $(show).addClass("show");
 };
 
 // === QUIZ NAVIGATION FUNCTIONALITY ===
@@ -55,8 +77,10 @@ app.navigateQuestions = function (button) {
 app.checkNavButton = (buttonType, next, previous) => {
   if (buttonType === "next") {
     $(next).removeClass("hide");
+    $(next).addClass("show");
   } else if (buttonType === "back") {
     $(previous).removeClass("hide");
+    $(previous).addClass("show");
   }
 };
 
@@ -142,28 +166,34 @@ app.findFinalResult = (a, b, c, d, e) => {
   const optionC = c.count;
   const optionD = d.count;
 
+  let resultTitle = "";
   let finalResult = "";
 
   // Update final result with ansewer type most chosen by the user
   if (optionA > optionB && optionA > optionC && optionA > optionD) {
     finalResult = a.result;
+    resultTitle = a.name;
   } else if (optionB > optionA && optionB > optionC && optionB > optionD) {
     finalResult = b.result;
+    resultTitle = b.name;
   } else if (optionC > optionA && optionC > optionB && optionC > optionD) {
     finalResult = c.result;
+    resultTitle = c.name;
   } else if (optionD > optionA && optionD > optionB && optionD > optionC) {
     finalResult = d.result;
+    resultTitle = d.name;
   } else {
     finalResult = e.result;
+    resultTitle = e.name;
   }
-  app.displayResults(finalResult);
+  app.displayResults(finalResult, resultTitle);
 };
 
 // Appends final quiz result to the page ----- +
-app.displayResults = (finalResult) => {
+app.displayResults = (finalResult, resultTitle) => {
   app.elementVisbility(".quizWrapper", ".resultsWrapper");
   app.elementVisbility(".quizContainer", ".resultsContainer");
-  $(".result").text(finalResult);
+  $(".result").text(resultTitle).append(`<p>${finalResult}</p>`);
 };
 
 // Handles the submit button ----- +

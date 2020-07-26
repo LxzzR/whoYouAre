@@ -1,6 +1,6 @@
 .quizWrapper,
 .resultsWrapper {
-  background: rgba(245, 245, 245, 0.1);
+  background: rgba(245, 245, 245, 0.15);
   border-radius: 15px;
   padding: 2%;
   margin: 0 auto;
@@ -9,16 +9,20 @@
 .quizContainer,
 .resultsContainer {
   align-items: center;
-  background: rgb(242, 239, 238);
-  color: #333;
+  background: $white;
+  color: $black;
   border-radius: 10px;
   display: flex;
   flex-flow: column nowrap;
-  padding: 25px 15px;
+  padding: 10px;
 }
 
 .resultsContainer {
-  padding: 250px 50px;
+  align-items: center;
+  background: rgba(18, 18, 18, 0.85);
+  color: $white;
+  padding: 100px 20px;
+  width: 100%;
 }
 
 .quizOptionsWrapper {
@@ -26,7 +30,8 @@
   flex-flow: row wrap;
   justify-content: space-between;
   text-transform: uppercase;
-  width: 99%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .quizOption {
@@ -34,7 +39,8 @@
   display: flex;
   border-radius: 10px;
   margin: 1% 0;
-  padding: 20px 0 50px 0;
+  // padding: 20px 0 50px 0;
+  padding: 10px 0 50px 0;
   position: relative;
   transition: 700ms background, 350ms box-shadow;
   width: 49%;
@@ -62,6 +68,6 @@ label {
 }
 
 .imgWrapper {
-  margin: auto;
+  margin: 0 auto;
   width: 42%;
 }
