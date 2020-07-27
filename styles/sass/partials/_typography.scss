@@ -5,8 +5,7 @@ html {
 }
 
 h1,
-h2,
-legend {
+h2 {
   font-weight: 700;
   padding: 15px 0;
   text-transform: uppercase;
@@ -22,14 +21,14 @@ p {
   line-height: 1.5;
 }
 
-legend,
+h2,
 label,
 button {
   color: $black;
   text-align: center;
 }
 
-legend {
+h2 {
   font-size: 4.5rem;
   font-weight: 900;
   padding: 10px 0;
@@ -43,4 +42,9 @@ label {
 header p {
   font-size: 2.5rem;
   font-weight: 300;
+}
+
+.resultsContainer h2 {
+  color: $white;
+  text-align: left;
 }

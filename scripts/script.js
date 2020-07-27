@@ -59,16 +59,14 @@ app.elementVisbility = (hide, show) => {
 // Allows user to navigate through quiz questions ----- +
 app.navigateQuestions = function (button) {
   const $buttonType = button.attr("class");
-  const $questionIndex = button.parents("fieldset").attr("data-questionIndex");
-  const $nextQuestion = `fieldset[data-questionIndex="${
-    Number($questionIndex) + 1
-  }"]`;
-  const $previousQuestion = `fieldset[data-questionIndex="${
+  const $questionIndex = button.parents(".question").attr("data-questionIndex");
+  const $nextQuestion = `[data-questionIndex="${Number($questionIndex) + 1}"]`;
+  const $previousQuestion = `[data-questionIndex="${
     Number($questionIndex) - 1
   }"]`;
 
   // Hides current quiz question
-  button.parents("fieldset").addClass("hide");
+  button.parents(".question").addClass("hide");
 
   app.checkNavButton($buttonType, $nextQuestion, $previousQuestion);
 };
@@ -98,13 +96,13 @@ app.handleNavigation = function () {
 app.handleRadioSelection = function () {
   $("input[type=radio").click(function () {
     // -- Scoped Variables --
-    const $fieldset = $(this).parents("fieldset");
-    const questionIndex = $fieldset.attr("data-questionIndex");
+    const $question = $(this).parents(".question");
+    const questionIndex = $question.attr("data-questionIndex");
     const $value = $(this).attr("value");
     // -- Function Calls --
     app.saveUserSelection(questionIndex, $value);
     // Adds styling to user-selected option
-    $fieldset.find("div").removeClass("selected");
+    $question.find("div").removeClass("selected");
     $(this).parents("div").addClass("selected");
   });
 };

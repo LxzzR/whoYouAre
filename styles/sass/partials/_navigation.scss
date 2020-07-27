@@ -24,16 +24,15 @@ button {
   }
 }
 
-.reset,
-.submit,
 .modalButton {
   margin-top: 20px;
-  padding: 10px 20px;
 }
 
 .submit,
 .modalButton {
-  background: rgba(18, 18, 18, 0.3);
+  &:hover {
+    background: rgba(18, 18, 18, 0.15);
+  }
 }
 
 .reset {

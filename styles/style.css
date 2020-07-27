@@ -68,12 +68,13 @@ main {
   margin: 0 auto;
 }
 
-fieldset {
-  border: none;
-}
-
 input {
   opacity: 0;
+}
+
+.imgWrapper {
+  margin: 0 auto;
+  width: 50%;
 }
 
 .hide {
@@ -83,8 +84,8 @@ input {
   left: -1000px;
   height: 1px;
   width: 1px;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 .show {
@@ -110,8 +111,7 @@ html {
 }
 
 h1,
-h2,
-legend {
+h2 {
   font-weight: 700;
   padding: 15px 0;
   text-transform: uppercase;
@@ -127,14 +127,14 @@ p {
   line-height: 1.5;
 }
 
-legend,
+h2,
 label,
 button {
   color: #121212;
   text-align: center;
 }
 
-legend {
+h2 {
   font-size: 4.5rem;
   font-weight: 900;
   padding: 10px 0;
@@ -148,6 +148,11 @@ label {
 header p {
   font-size: 2.5rem;
   font-weight: 300;
+}
+
+.resultsContainer h2 {
+  color: #f2efee;
+  text-align: left;
 }
 
 .quizWrapper,
@@ -164,8 +169,6 @@ header p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #f2efee;
-  color: #121212;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,10 +180,12 @@ header p {
   padding: 10px;
 }
 
+.quizContainer {
+  background: #f2efee;
+  color: #121212;
+}
+
 .resultsContainer {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: rgba(18, 18, 18, 0.85);
   color: #f2efee;
   padding: 100px 20px;
@@ -227,6 +232,10 @@ header p {
           box-shadow: 0 2px 3px rgba(128, 128, 128, 0.4);
 }
 
+.quizOption.selected {
+  background: #aed4c9;
+}
+
 label {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -247,11 +256,6 @@ label {
 
 label:hover {
   cursor: pointer;
-}
-
-.imgWrapper {
-  margin: 0 auto;
-  width: 50%;
 }
 
 .buttons {
@@ -287,16 +291,13 @@ button:hover, button:focus-within {
           transform: scale(1.03);
 }
 
-.reset,
-.submit,
 .modalButton {
   margin-top: 20px;
-  padding: 10px 20px;
 }
 
-.submit,
-.modalButton {
-  background: rgba(18, 18, 18, 0.3);
+.submit:hover,
+.modalButton:hover {
+  background: rgba(18, 18, 18, 0.15);
 }
 
 .reset {

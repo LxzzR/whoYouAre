@@ -15,10 +15,24 @@
       crossorigin="anonymous"
     ></script>
     <!-- === Favicon === -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
     <!-- === Local Stylesheet === -->
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Who Are You? | Quiz</title>
@@ -27,11 +41,11 @@
     <!-- 'pageWrapper' contains the entire site's content and prevents it from bleeding to the edge of the screen and from getting too large-->
     <div class="pageWrapper">
       <header>
-          <h1>Who Are you?</h1>
-          <p>
-            What type of person are you, deep down? Answer these questions to reveal the truth about your
-            personality.
-          </p>
+        <h1>Who Are you?</h1>
+        <p>
+          What type of person are you, deep down? Answer these questions to
+          reveal the truth about your personality.
+        </p>
       </header>
 
       <main>
@@ -39,49 +53,85 @@
         <div class="quizWrapper">
           <!-- 'quizQuestions' contains ALL of the dynamically displayed quiz questions -->
           <form action="" method="/" class="quizContainer" autocomplete="off">
-            
             <!-- === QUESTION ONE === -->
-            <fieldset class="question questionOne" data-questionIndex="0">
-              <legend>Pick Your Poison</legend>
+            <div
+              class="question questionOne"
+              data-questionIndex="0"
+              role="radiogroup"
+              aria-labelledby="questionOne"
+            >
+              <h2 id="questionOne">Pick Your Poison</h2>
               <div class="quizOptionsWrapper">
                 <!-- ----- Option A ----- -->
                 <div class="quizOption">
                   <div class="imgWrapper">
-                    <img src="./assets/chemex.png" alt="Bold illustration of a Chemex pour over">
+                    <img
+                      src="./assets/chemex.png"
+                      alt="Bold illustration of a Chemex pour over"
+                    />
                   </div>
                   <label for="coffee">
                     Coffee
-                    <input type="radio" name="questionOne" id="coffee" value="thoughtful">
+                    <input
+                      type="radio"
+                      name="questionOne"
+                      id="coffee"
+                      value="thoughtful"
+                    />
                   </label>
                 </div>
                 <!-- ----- Option B ----- -->
                 <div class="quizOption">
                   <div class="imgWrapper">
-                    <img src="./assets/hops.png" alt="Hand drawn illustration of hops">
+                    <img
+                      src="./assets/hops.png"
+                      alt="Hand drawn illustration of hops"
+                    />
                   </div>
                   <label for="hops">
                     Hops
-                    <input type="radio" name="questionOne" id="hops" value="leader">
+                    <input
+                      type="radio"
+                      name="questionOne"
+                      id="hops"
+                      value="leader"
+                    />
                   </label>
                 </div>
                 <!-- ----- Option C ----- -->
                 <div class="quizOption">
                   <div class="imgWrapper">
-                    <img src="./assets/water.png" alt="Three white water droplets in a black circle">
+                    <img
+                      src="./assets/water.png"
+                      alt="Three white water droplets in a black circle"
+                    />
                   </div>
                   <label for="water">
                     Water
-                    <input type="radio" name="questionOne" id="water" value="compassionate">
+                    <input
+                      type="radio"
+                      name="questionOne"
+                      id="water"
+                      value="compassionate"
+                    />
                   </label>
                 </div>
                 <!-- ----- Option D ----- -->
                 <div class="quizOption">
                   <div class="imgWrapper">
-                    <img src="./assets/wine.png" alt="Hand drawn illustration of hops">
+                    <img
+                      src="./assets/wine.png"
+                      alt="Hand drawn illustration of hops"
+                    />
                   </div>
                   <label for="wine">
                     Wine
-                    <input type="radio" name="questionOne" id="wine" value="sensual">
+                    <input
+                      type="radio"
+                      name="questionOne"
+                      id="wine"
+                      value="sensual"
+                    />
                   </label>
                 </div>
                 <div class="buttons">
@@ -94,50 +144,85 @@
                     <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
-              </fieldset>
+              </div>
+            </div>
 
             <!-- === QUESTION TWO === -->
-            <fieldset class="question questionTwo hide" data-questionIndex="1">
-              <legend>Are you more of a ...</legend>
+            <div
+              class="question questionTwo hide"
+              data-questionIndex="1"
+              role="radiogroup"
+              aria-labelledby="questionTwo"
+            >
+              <h2 id="questionTwo">Are you more of a ...</h2>
               <div class="quizOptionsWrapper">
                 <!-- ----- Option ----- -->
                 <div class="quizOption">
                   <div class="imgWrapper">
-                    <img src="./assets/lion.png" alt="Black and white illustration of a proud cartoon lion">
+                    <img
+                      src="./assets/lion.png"
+                      alt="Black and white illustration of a proud cartoon lion"
+                    />
                   </div>
                   <label for="hero">
                     Hero
-                    <input type="radio" name="questionTwo" id="hero" value="leader">
+                    <input
+                      type="radio"
+                      name="questionTwo"
+                      id="hero"
+                      value="leader"
+                    />
                   </label>
                 </div>
                 <!-- ----- Option ----- -->
                 <div class="quizOption">
                   <div class="imgWrapper">
-                    <img src="./assets/plant.png" alt="Hand drawn illustration of healer">
+                    <img
+                      src="./assets/plant.png"
+                      alt="Hand drawn illustration of healer"
+                    />
                   </div>
                   <label for="healer">
                     Healer
-                    <input type="radio" name="questionTwo" id="healer" value="compassionate">
+                    <input
+                      type="radio"
+                      name="questionTwo"
+                      id="healer"
+                      value="compassionate"
+                    />
                   </label>
                 </div>
                 <!-- ----- Option ----- -->
                 <div class="quizOption">
                   <div class="imgWrapper">
-                    <img src="./assets/bookshelf.png" alt="Tall and modern illustration of a bookshelf">
+                    <img
+                      src="./assets/bookshelf.png"
+                      alt="Tall and modern illustration of a bookshelf"
+                    />
                   </div>
                   <label for="thinker">
                     Thinker
-                    <input type="radio" name="questionTwo" id="thinker" value="thoughtful">
+                    <input
+                      type="radio"
+                      name="questionTwo"
+                      id="thinker"
+                      value="thoughtful"
+                    />
                   </label>
                 </div>
                 <!-- ----- Option ----- -->
                 <div class="quizOption">
                   <div class="imgWrapper">
-                    <img src="./assets/mouth.png" alt="">
+                    <img src="./assets/mouth.png" alt="" />
                   </div>
                   <label for="hedonist">
                     Hedonist
-                    <input type="radio" name="questionTwo" id="hedonist" value="sensual">
+                    <input
+                      type="radio"
+                      name="questionTwo"
+                      id="hedonist"
+                      value="sensual"
+                    />
                   </label>
                 </div>
                 <div class="buttons">
@@ -150,203 +235,298 @@
                     <i class="fas fa-arrow-right"></i>
                   </button>
                 </div>
-              </fieldset>
-
-              <!-- === Question Three === -->
-              <fieldset class="question questionThree hide" data-questionIndex="2">
-                <legend>What makes you powerful?</legend>
-                <div class="quizOptionsWrapper">
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/ideas.png" alt="Symetrical and gemetric shapes">
-                    </div>
-                    <label for="ideas">
-                      Ideas
-                      <input type="radio" name="questionThree" id="ideas" value="thoughtful">
-                    </label>
-                  </div>
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/headphones.png" alt="Illustration of over-ear headphones">
-                    </div>
-                    <label for="arts">
-                      Arts
-                      <input type="radio" name="questionThree" id="arts" value="sensual">
-                    </label>
-                  </div>
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/nature.png" alt="">
-                    </div>
-                    <label for="adventure">
-                      Adventure
-                      <input type="radio" name="questionThree" id="adventure" value="leader">
-                    </label>
-                  </div>
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/yoga.png" alt="Illustration of a person in a yoga pose">
-                    </div>
-                    <label for="care">
-                      Care
-                      <input type="radio" name="questionThree" id="care" value="compassionate">
-                    </label>
-                  </div>
-                  <div class="buttons">
-                    <button type="button" aria-hidden="true" class="back">
-                      <i class="fas fa-arrow-left"></i>
-                      Back
-                    </button>
-                    <button type="button" aria-hidden="true" class="next">
-                      Next
-                      <i class="fas fa-arrow-right"></i>
-                    </button>
-                  </div>
-                </fieldset>
-
-              <!-- === Question Four === -->
-              <fieldset class="question questionFour hide" data-questionIndex="3">
-                <legend>Choose your weapon</legend>
-                <div class="quizOptionsWrapper">
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/pen.png" alt="Symetrical and gemetric shapes">
-                    </div>
-                    <label for="pen">
-                      Wit
-                      <input type="radio" name="questionFour" id="pen" value="thoughtful">
-                    </label>
-                  </div>
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/empathy.png" alt="Illustration of over-ear headphones">
-                    </div>
-                    <label for="love">
-                      Empathy
-                      <input type="radio" name="questionFour" id="love" value="compassionate">
-                    </label>
-                  </div>
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/strength.png" alt="">
-                    </div>
-                    <label for="sword">
-                      Strength
-                      <input type="radio" name="questionFour" id="sword" value="leader">
-                    </label>
-                  </div>
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/wink.png" alt="Illustration of a person in a yoga pose">
-                    </div>
-                    <label for="charm">
-                      Charm
-                      <input type="radio" name="questionFour" id="charm" value="sensual">
-                    </label>
-                  </div>
-                  <div class="buttons">
-                    <button type="button" aria-hidden="true" class="back">
-                      <i class="fas fa-arrow-left"></i>
-                      Back
-                    </button>
-                    <button type="button" aria-hidden="true" class="next">
-                      Next
-                      <i class="fas fa-arrow-right"></i>
-                    </button>
-                  </div>
-                </fieldset>
-
-
-              <!-- === Question Five === -->
-              <fieldset class="question questionFive hide" data-questionIndex="4">
-                <legend>Finally, refuel ...</legend>
-                <div class="quizOptionsWrapper">
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/veggies.png" alt="">
-                    </div>
-                    <label for="veggies">
-                      Veggies
-                      <input type="radio" name="questionFive" id="veggies" value="compassionate">
-                    </label>
-                  </div>
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/coffee.png" alt="">
-                    </div>
-                    <label for="coffee2">
-                      Coffee
-                      <input type="radio" name="questionFive" id="coffee2" value="thoughtful">
-                    </label>
-                  </div>
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/fastFood.png" alt="">
-                    </div>
-                    <label for="fastFood">
-                      Fast Food
-                      <input type="radio" name="questionFive" id="fastFood" value="sensual">
-                    </label>
-                  </div>
-                  <!-- ----- Option ----- -->
-                  <div class="quizOption">
-                    <div class="imgWrapper">
-                      <img src="./assets/blender.png" alt="">
-                    </div>
-                    <label for="shake">
-                      Shake
-                      <input type="radio" name="questionFive" id="shake" value="leader">
-                    </label>
-                  </div>
-                  <div class="buttons">
-                    <button type="button" aria-hidden="true" class="back">
-                      <i class="fas fa-arrow-left"></i>
-                      Back
-                    </button>
-                    <button aria-hidden="true" type="submit" class="submit">
-                      Submit
-                    </button>
-                  </div>
-                </fieldset>
-            </div>
-          </form>
-          <!-- Results -->
-          <div class="resultsWrapper hide">
-            <div class="resultsContainer hide">
-              <h2 class="result"></h2>
-              <button type="button" class="reset">Take Again</button>
-            </div>
-          </div>
-
-          <!-- === Form Validation Modal === -->
-            <div class="modalWrapper hide">
-              <div class="modal">
-                <p>Please fill out all the enitre quiz before submitting!</p>
-                <button type="button" class="modalButton">Go back</button>
               </div>
             </div>
+
+            <!-- === Question Three === -->
+            <div
+              class="question questionThree hide"
+              data-questionIndex="2"
+              role="radiogroup"
+              aria-labelledby="questionThree"
+            >
+              <h2 id="questionThree">What makes you powerful?</h2>
+              <div class="quizOptionsWrapper">
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img
+                      src="./assets/ideas.png"
+                      alt="Symetrical and gemetric shapes"
+                    />
+                  </div>
+                  <label for="ideas">
+                    Ideas
+                    <input
+                      type="radio"
+                      name="questionThree"
+                      id="ideas"
+                      value="thoughtful"
+                    />
+                  </label>
+                </div>
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img
+                      src="./assets/headphones.png"
+                      alt="Illustration of over-ear headphones"
+                    />
+                  </div>
+                  <label for="arts">
+                    Arts
+                    <input
+                      type="radio"
+                      name="questionThree"
+                      id="arts"
+                      value="sensual"
+                    />
+                  </label>
+                </div>
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/nature.png" alt="" />
+                  </div>
+                  <label for="adventure">
+                    Adventure
+                    <input
+                      type="radio"
+                      name="questionThree"
+                      id="adventure"
+                      value="leader"
+                    />
+                  </label>
+                </div>
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img
+                      src="./assets/yoga.png"
+                      alt="Illustration of a person in a yoga pose"
+                    />
+                  </div>
+                  <label for="care">
+                    Care
+                    <input
+                      type="radio"
+                      name="questionThree"
+                      id="care"
+                      value="compassionate"
+                    />
+                  </label>
+                </div>
+                <div class="buttons">
+                  <button type="button" aria-hidden="true" class="back">
+                    <i class="fas fa-arrow-left"></i>
+                    Back
+                  </button>
+                  <button type="button" aria-hidden="true" class="next">
+                    Next
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- === Question Four === -->
+            <div
+              class="question questionFour hide"
+              data-questionIndex="3"
+              role="radiogroup"
+              aria-labelledby="questionFour"
+            >
+              <h2 id="questionFour">Choose your weapon</h2>
+              <div class="quizOptionsWrapper">
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img
+                      src="./assets/pen.png"
+                      alt="Symetrical and gemetric shapes"
+                    />
+                  </div>
+                  <label for="pen">
+                    Wit
+                    <input
+                      type="radio"
+                      name="questionFour"
+                      id="pen"
+                      value="thoughtful"
+                    />
+                  </label>
+                </div>
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img
+                      src="./assets/empathy.png"
+                      alt="Illustration of over-ear headphones"
+                    />
+                  </div>
+                  <label for="love">
+                    Empathy
+                    <input
+                      type="radio"
+                      name="questionFour"
+                      id="love"
+                      value="compassionate"
+                    />
+                  </label>
+                </div>
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/strength.png" alt="" />
+                  </div>
+                  <label for="sword">
+                    Strength
+                    <input
+                      type="radio"
+                      name="questionFour"
+                      id="sword"
+                      value="leader"
+                    />
+                  </label>
+                </div>
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img
+                      src="./assets/wink.png"
+                      alt="Illustration of a person in a yoga pose"
+                    />
+                  </div>
+                  <label for="charm">
+                    Charm
+                    <input
+                      type="radio"
+                      name="questionFour"
+                      id="charm"
+                      value="sensual"
+                    />
+                  </label>
+                </div>
+                <div class="buttons">
+                  <button type="button" aria-hidden="true" class="back">
+                    <i class="fas fa-arrow-left"></i>
+                    Back
+                  </button>
+                  <button type="button" aria-hidden="true" class="next">
+                    Next
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- === Question Five === -->
+            <div
+              class="question questionFive hide"
+              data-questionIndex="4"
+              role="radiogroup"
+              aria-labelledby="questionFive"
+            >
+              <h2 id="questionFive">Finally, refuel ...</h2>
+              <div class="quizOptionsWrapper">
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/veggies.png" alt="" />
+                  </div>
+                  <label for="veggies">
+                    Veggies
+                    <input
+                      type="radio"
+                      name="questionFive"
+                      id="veggies"
+                      value="compassionate"
+                    />
+                  </label>
+                </div>
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/coffee.png" alt="" />
+                  </div>
+                  <label for="coffee2">
+                    Coffee
+                    <input
+                      type="radio"
+                      name="questionFive"
+                      id="coffee2"
+                      value="thoughtful"
+                    />
+                  </label>
+                </div>
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/fastFood.png" alt="" />
+                  </div>
+                  <label for="fastFood">
+                    Fast Food
+                    <input
+                      type="radio"
+                      name="questionFive"
+                      id="fastFood"
+                      value="sensual"
+                    />
+                  </label>
+                </div>
+                <!-- ----- Option ----- -->
+                <div class="quizOption">
+                  <div class="imgWrapper">
+                    <img src="./assets/blender.png" alt="" />
+                  </div>
+                  <label for="shake">
+                    Shake
+                    <input
+                      type="radio"
+                      name="questionFive"
+                      id="shake"
+                      value="leader"
+                    />
+                  </label>
+                </div>
+                <div class="buttons">
+                  <button type="button" aria-hidden="true" class="back">
+                    <i class="fas fa-arrow-left"></i>
+                    Back
+                  </button>
+                  <button aria-hidden="true" type="submit" class="submit">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Results -->
+        <div class="resultsWrapper hide">
+          <div class="resultsContainer">
+            <h2 class="result"></h2>
+            <button type="button" class="reset">Take Again</button>
+          </div>
+        </div>
+
+        <!-- === Form Validation Modal === -->
+        <div class="modalWrapper hide">
+          <div class="modal">
+            <p>Please fill out the enitre quiz before submitting!</p>
+            <button type="button" class="modalButton">Go back</button>
           </div>
         </div>
       </main>
     </div>
-  </body>
-
-
+    <!-- === JQUERY SCRIPTS === -->
     <script
-  src="https://code.jquery.com/jquery-3.5.1.js"
-  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-  crossorigin="anonymous"></script>
-  <script src="scripts/script.js"></script>
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- === LOCAL SCRIPTS === -->
+    <script src="scripts/script.js"></script>
   </body>
 </html>
