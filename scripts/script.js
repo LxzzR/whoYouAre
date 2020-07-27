@@ -115,14 +115,10 @@ app.saveUserSelection = function (questionIndex, value) {
 };
 
 // Upadtes the count for each possible user selection and saves them in the results array ----- +
-app.findResults = function () {
-  app.loopAnswers(app.answers);
-  console.log(app.results);
-};
 
 // Loops through the answers array and counts results  ----- +
-app.loopAnswers = (array) => {
-  array.forEach(function (answer) {
+app.loopAnswers = () => {
+  app.answers.forEach(function (answer) {
     const userResult = answer;
     app.countResults(userResult);
   });
@@ -186,6 +182,7 @@ app.findFinalResult = (a, b, c, d, e) => {
     finalResult = e.result;
     resultTitle = e.name;
   }
+
   app.displayResults(finalResult, resultTitle);
 };
 
@@ -205,8 +202,8 @@ app.validateQuiz = () => {
       $(".questionFive").removeClass("hide");
     });
   } else {
+    app.loopAnswers();
     app.determineResult();
-    app.findResults();
   }
 };
 
