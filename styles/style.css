@@ -311,18 +311,21 @@ button:hover, button:focus-within {
   }
 }
 
+@media all and (min-width: 500px) {
+  .pageWrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+}
+
 @media all and (min-width: 768px) {
   html {
     font-size: 62.5%;
   }
   body::after {
     height: 100%;
-  }
-  .pageWrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 90%;
   }
   .resultsContainer {
     padding: 250px 50px;

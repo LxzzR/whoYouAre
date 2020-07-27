@@ -7,6 +7,13 @@
   }
 }
 
+@media all and (min-width: 500px) {
+  .pageWrapper {
+    justify-content: center;
+    width: 90%;
+  }
+}
+
 // Medium sized screens ------ +
 @media all and (min-width: 768px) {
   html {
@@ -17,11 +24,6 @@
     &::after {
       height: 100%;
     }
-  }
-
-  .pageWrapper {
-    justify-content: center;
-    width: 90%;
   }
 
   .resultsContainer {
