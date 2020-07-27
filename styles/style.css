@@ -322,10 +322,7 @@ button:hover, button:focus-within {
             align-items: center;
   }
   body::after {
-    height: 110%;
-  }
-  .pageWrapper {
-    height: 90%;
+    height: 125%;
   }
 }
 
@@ -345,16 +342,6 @@ button:hover, button:focus-within {
   html {
     font-size: 62.5%;
   }
-  .pageWrapper {
-    height: 80%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 80%;
-  }
-}
-
-@media all and (min-width: 1100px) {
   .pageWrapper {
     max-width: 1200px;
     width: 90%;
