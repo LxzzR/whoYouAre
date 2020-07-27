@@ -251,7 +251,7 @@ label:hover {
 
 .imgWrapper {
   margin: 0 auto;
-  width: 42%;
+  width: 50%;
 }
 
 .buttons {
@@ -288,12 +288,14 @@ button:hover, button:focus-within {
 }
 
 .reset,
-.submit {
+.submit,
+.modalButton {
   margin-top: 20px;
   padding: 10px 20px;
 }
 
-.submit {
+.submit,
+.modalButton {
   background: rgba(18, 18, 18, 0.3);
 }
 
