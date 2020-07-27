@@ -24,7 +24,7 @@ body::after {
   opacity: 0.15;
   position: absolute;
   top: 0;
-  height: 110%;
+  height: 125%;
   width: 100%;
   z-index: -1;
 }
@@ -35,27 +35,21 @@ img {
 }
 
 .pageWrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: column;
+          flex-flow: column;
   height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: 0 auto;
   width: 90%;
 }
 
 header {
   margin: 0 auto;
-  padding: 15px;
+  padding: 15px 0 30px 0;
 }
 
 main {
@@ -291,7 +285,8 @@ button:hover, button:focus-within {
           transform: scale(1.03);
 }
 
-.modalButton {
+.modalButton,
+.reset {
   margin-top: 20px;
 }
 
@@ -314,25 +309,20 @@ button:hover, button:focus-within {
   html {
     font-size: 42%;
   }
-  body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body::after {
-    height: 125%;
-  }
 }
 
 @media all and (min-width: 768px) {
   html {
-    font-size: 58%;
+    font-size: 62.5%;
   }
   body::after {
     height: 100%;
+  }
+  .pageWrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
   }
   .resultsContainer {
     padding: 250px 50px;
@@ -340,10 +330,17 @@ button:hover, button:focus-within {
 }
 
 @media all and (min-width: 900px) {
-  html {
-    font-size: 62.5%;
-  }
   .pageWrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 1200px;
     width: 90%;
   }

@@ -5,26 +5,23 @@
   html {
     font-size: 42%;
   }
-
-  body {
-    display: flex;
-    align-items: center;
-    &::after {
-      height: 125%;
-    }
-  }
 }
 
 // Medium sized screens ------ +
 @media all and (min-width: 768px) {
   html {
-    font-size: 58%;
+    font-size: 62.5%;
   }
 
   body {
     &::after {
       height: 100%;
     }
+  }
+
+  .pageWrapper {
+    justify-content: center;
+    width: 90%;
   }
 
   .resultsContainer {
@@ -34,11 +31,10 @@
 
 // Large Screens ----- +
 @media all and (min-width: 900px) {
-  html {
-    font-size: 62.5%;
-  }
-
   .pageWrapper {
+    align-items: center;
+    flex-flow: row;
+    justify-content: space-between;
     max-width: 1200px;
     width: 90%;
   }
