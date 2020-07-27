@@ -24,7 +24,7 @@ body::after {
   opacity: 0.15;
   position: absolute;
   top: 0;
-  height: 125%;
+  height: 107%;
   width: 100%;
   z-index: -1;
 }
@@ -112,7 +112,7 @@ h2 {
 }
 
 h1 {
-  font-size: 9rem;
+  font-size: 5rem;
 }
 
 p {
@@ -326,6 +326,9 @@ button:hover, button:focus-within {
   }
   body::after {
     height: 100%;
+  }
+  h1 {
+    font-size: 9rem;
   }
   .resultsContainer {
     padding: 250px 50px;
