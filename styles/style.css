@@ -83,18 +83,26 @@ input {
   left: -1000px;
   height: 1px;
   width: 1px;
-  -webkit-transition: opacity 700ms;
-  transition: opacity 700ms;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .show {
   opacity: 1;
-  -webkit-transition: opacity 700ms;
-  transition: opacity 700ms;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .hidden {
   visibility: hidden;
+}
+
+.modal {
+  background: #f2efee;
+  border-radius: 10px;
+  color: #121212;
+  margin: 0 auto;
+  padding: 100px;
 }
 
 html {
@@ -143,7 +151,8 @@ header p {
 }
 
 .quizWrapper,
-.resultsWrapper {
+.resultsWrapper,
+.modalWrapper {
   background: rgba(245, 245, 245, 0.15);
   border-radius: 15px;
   padding: 2%;
@@ -252,27 +261,50 @@ label:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 98%;
+  padding: 10px 0;
   margin: 0 auto;
+  width: 98%;
 }
 
 button {
   border: none;
+  border-radius: 5px;
   background: transparent;
   font-size: 2.5rem;
   font-weight: 700;
-  padding: 25px 0 10px 0;
-  -webkit-transition: color 200ms, -webkit-transform 200ms;
-  transition: color 200ms, -webkit-transform 200ms;
-  transition: color 200ms, transform 200ms;
-  transition: color 200ms, transform 200ms, -webkit-transform 200ms;
+  padding: 10px 20px;
+  -webkit-transition: color 200ms, background 400ms, -webkit-transform 200ms;
+  transition: color 200ms, background 400ms, -webkit-transform 200ms;
+  transition: color 200ms, transform 200ms, background 400ms;
+  transition: color 200ms, transform 200ms, background 400ms, -webkit-transform 200ms;
   text-transform: uppercase;
 }
 
 button:hover, button:focus-within {
+  background: rgba(18, 18, 18, 0.15);
   cursor: pointer;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+.reset,
+.submit {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.submit {
+  background: rgba(18, 18, 18, 0.3);
+}
+
+.reset {
+  background: rgba(242, 239, 238, 0.3);
+  -webkit-transform: background 400ms;
+          transform: background 400ms;
+}
+
+.reset:hover {
+  background: rgba(242, 239, 238, 0.7);
 }
 
 @media all and (min-width: 375px) {
@@ -336,6 +368,6 @@ button:hover, button:focus-within {
     padding: 25px 15px;
   }
   .resultsContainer {
-    padding: 250px 100px;
+    padding: 150px 100px;
   }
 }

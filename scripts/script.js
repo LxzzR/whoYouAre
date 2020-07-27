@@ -196,13 +196,26 @@ app.displayResults = (finalResult, resultTitle) => {
   $(".result").text(resultTitle).append(`<p>${finalResult}</p>`);
 };
 
+// Form validation ----- +
+app.validateQuiz = () => {
+  if ($.inArray("", app.answers) > -1) {
+    app.elementVisbility(".quizWrapper", ".modalWrapper");
+    $(".modalButton").click(() => {
+      $(app.elementVisbility(".modalWrapper", ".quizWrapper"));
+      $(".questionFive").removeClass("hide");
+    });
+  } else {
+    app.determineResult();
+    app.findResults();
+  }
+};
+
 // Handles the submit button ----- +
 app.handleSubmit = () => {
   $("form").submit((e) => {
     e.preventDefault();
+    app.validateQuiz();
     app.elementVisbility(".questionFive");
-    app.findResults();
-    app.determineResult();
   });
 };
 

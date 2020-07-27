@@ -71,14 +71,22 @@ input {
   left: -1000px;
   height: 1px;
   width: 1px;
-  transition: opacity 700ms;
+  transition: opacity 1s;
 }
 
 .show {
   opacity: 1;
-  transition: opacity 700ms;
+  transition: opacity 1s;
 }
 
 .hidden {
   visibility: hidden;
+}
+
+.modal {
+  background: $white;
+  border-radius: 10px;
+  color: $black;
+  margin: 0 auto;
+  padding: 100px;
 }
