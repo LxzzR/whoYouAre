@@ -71,6 +71,14 @@ input {
   width: 50%;
 }
 
+.modal {
+  background: #f2efee;
+  border-radius: 10px;
+  color: #121212;
+  margin: 0 auto;
+  padding: 100px;
+}
+
 .hide {
   position: absolute;
   overflow-x: hidden;
@@ -90,14 +98,6 @@ input {
 
 .hidden {
   visibility: hidden;
-}
-
-.modal {
-  background: #f2efee;
-  border-radius: 10px;
-  color: #121212;
-  margin: 0 auto;
-  padding: 100px;
 }
 
 html {

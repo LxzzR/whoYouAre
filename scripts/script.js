@@ -13,34 +13,34 @@ app.results = [
     name: "thoughtful",
     count: 0,
     result:
-      "You're a thoughtful and creative person who is most comfortable in the realm of ideas.",
+      "You're a creative person who is most comfortable in the realm of ideas and happiest when learning new things. Those around you admire your ability to solve problems.",
   },
   {
     id: "b",
     name: "sensual",
     count: 0,
     result:
-      "You're a sensual person who enjoys life's pleasures. You make the most of your time, and you remind those around you to live in the moment.",
+      "You're a person who enjoys life's little pleasures. People love to be around you because you remind them to live in the moment. You work to enjoy your free time and like to make the most of your life",
   },
   {
     id: "c",
     name: "compassionate",
     count: 0,
     result:
-      "You're a considerate person who likes to cultivate growth and improvement in yourself and those around you. You are comfortable with big feelings and have a calming energy that puts those around you at ease.",
+      "You're a considerate person who likes to cultivate enviornments of growth and improvement. You are comfortable in the realm of emotions and have a calming energy that puts those around you at ease.",
   },
   {
     id: "d",
     name: "heroic",
     count: 0,
     result:
-      "You make the best of situations and exude a deep sense of determination that others admire. Your adventurous spirit and strong will are a force to be reckoned with.",
+      "You make the best of all situations and exude a deep sense of determination that others around you admire. Your adventurous spirit and strong will are a force to be reckoned with.",
   },
   {
     id: "e",
     name: "rebelious",
     result:
-      "You're a rebel and can't be given a label. You like to defy expecations and can't be easily stereotyped.",
+      "You're a rebel and can't be given labels. You like to defy expecations and can't be easily stereotyped.",
   },
 ];
 
