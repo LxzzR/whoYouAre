@@ -329,15 +329,15 @@ button:hover, button:focus-within {
   html {
     font-size: 62.5%;
   }
-  h1 {
-    font-size: 9rem;
-  }
   .resultsContainer {
     padding: 250px 50px;
   }
 }
 
 @media all and (min-width: 900px) {
+  h1 {
+    font-size: 9rem;
+  }
   .pageWrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;

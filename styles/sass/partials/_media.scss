@@ -13,10 +13,6 @@
     font-size: 62.5%;
   }
 
-  h1 {
-    font-size: 9rem;
-  }
-
   .resultsContainer {
     padding: 250px 50px;
   }
@@ -24,6 +20,10 @@
 
 // Large Screens ----- +
 @media all and (min-width: 900px) {
+  h1 {
+    font-size: 9rem;
+  }
+
   .pageWrapper {
     align-items: center;
     flex-flow: row;
