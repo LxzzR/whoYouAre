@@ -33,7 +33,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   text-transform: uppercase;
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
 }
 
@@ -46,12 +46,12 @@
   position: relative;
   transition: 700ms background, 350ms box-shadow;
   width: 49%;
-  &:hover,
-  &:focus-within,
-  &.selected {
-    background: rgba(218, 214, 213, 0.7);
-    box-shadow: 0 2px 3px rgba(128, 128, 128, 0.4);
-  }
+  // &:hover,
+  // &:focus-within,
+  // &.mobile {
+  background: rgba(218, 214, 213, 0.7);
+  box-shadow: 0 2px 3px rgba(128, 128, 128, 0.4);
+  // }
   &.selected {
     background: lighten($primary, 10);
   }

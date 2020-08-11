@@ -55,6 +55,12 @@ app.elementVisbility = (hide, show) => {
 };
 
 // === QUIZ NAVIGATION FUNCTIONALITY ===
+app.handleMobile = () => {
+  $(".continue").click(function () {
+    $(".hideMobile").addClass("mediaHidden");
+    $(".quizWrapper").addClass("mediaShow");
+  });
+};
 
 // Allows user to navigate through quiz questions ----- +
 app.navigateQuestions = function (button) {
@@ -225,6 +231,7 @@ app.handleReset = () => {
 
 // === INITALIZES APPLICATION ===
 app.init = () => {
+  app.handleMobile();
   app.handleRadioSelection();
   app.handleSubmit();
   app.handleNavigation();

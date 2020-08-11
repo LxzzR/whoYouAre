@@ -29,17 +29,19 @@ button {
   margin-top: 20px;
 }
 
-.submit,
-.modalButton {
+.submit {
   &:hover {
     background: rgba(18, 18, 18, 0.15);
   }
 }
 
-.reset {
-  background: rgba(242, 239, 238, 0.3);
-  transform: background 400ms;
+.reset,
+.continue,
+.modalButton {
+  margin-top: 20px;
+  background: $primary;
   &:hover {
-    background: rgba(242, 239, 238, 0.7);
+    background: darken($primary, 10);
   }
+  padding: 15px 30px;
 }
