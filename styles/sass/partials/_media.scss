@@ -56,12 +56,6 @@
   .quizOption {
     background: transparent;
     box-shadow: none;
-    &:hover,
-    &:focus-within,
-    &.mobile {
-      background: rgba(218, 214, 213, 0.7);
-      box-shadow: 0 2px 3px rgba(128, 128, 128, 0.4);
-    }
   }
 
   .resultsContainer {
